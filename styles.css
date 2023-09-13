@@ -13,11 +13,12 @@ body {
 
 .header {
     text-align: center;
-    text-transform: uppercase;
-    padding: 32px;
+    padding: 32px 32px 5px 32px;
     background-color: rgba(0, 0, 0, 1);
     color: rgba(255, 202, 0, 1);
     border-bottom: 4px solid #fff;
+    display: flex;
+    flex-direction: column;
 }
 
 .gallery {
@@ -51,8 +52,25 @@ body {
     font-size: 3em;
     color: #fff;
     letter-spacing: 7px;
+    text-transform: uppercase;
+
 }
 
 img {
     filter: grayscale(100%);
+}
+
+.header p {
+    font-size: 0.9rem;
+    justify-items: end;
+}
+
+a {
+    color: rgba(255, 202, 0, 1);
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    font-weight: bold;
 }
